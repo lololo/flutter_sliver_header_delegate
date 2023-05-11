@@ -10,9 +10,9 @@ class CompleteExample extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final expandedStyle =
-        theme.textTheme.headline4.copyWith(color: Colors.white);
+        theme.textTheme.headlineMedium.copyWith(color: Colors.white);
     final collapsedStyle =
-        theme.textTheme.headline6.copyWith(color: Colors.white);
+        theme.textTheme.titleLarge.copyWith(color: Colors.white);
     const padding = EdgeInsets.symmetric(horizontal: 16, vertical: 16);
 
     return Scaffold(

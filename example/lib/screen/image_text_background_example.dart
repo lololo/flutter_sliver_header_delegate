@@ -38,7 +38,7 @@ class ImageTextBackgroundExample extends StatelessWidget {
                   ),
                   child: Text(
                     'Mountains',
-                    style: theme.textTheme.headline4.copyWith(
+                    style: theme.textTheme.headlineMedium.copyWith(
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
                     ),
