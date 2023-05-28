@@ -3,6 +3,7 @@ library sliver_flutter;
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:sliver_header_delegate/src/extension/widget_extension.dart';
 import 'package:sliver_header_delegate/src/item/header_background.dart';
 
@@ -76,6 +77,11 @@ class FlexibleHeaderDelegate extends SliverPersistentHeaderDelegate {
             ),
           ),
           AppBar(
+            systemOverlayStyle: SystemUiOverlayStyle(
+                statusBarBrightness:
+                    Theme.of(context).brightness == Brightness.light
+                        ? Brightness.light
+                        : Brightness.dark),
             backgroundColor: Colors.transparent,
             actions: actions,
             leading: leading,
